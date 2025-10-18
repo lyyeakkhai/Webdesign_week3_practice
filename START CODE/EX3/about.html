@@ -1,0 +1,115 @@
+<!-- Write your code here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <style>
+        * {
+				margin: 0;
+				padding: 0;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			/* <!-- 1-nav bar --> */
+			body {
+				padding-bottom: 5vh;
+			}
+            
+			.navbar ul {
+				background-color: #333;
+				margin: 0;
+				padding: 20px 0;
+				display: flex;
+                gap:30px;
+				list-style: none;
+                justify-content: center;
+                align-items: center;
+			}
+			.navbar ul li a {
+				text-decoration: none;
+				color: white;
+				padding: 14px 20px;
+			}
+            
+            .about-container {
+                padding: 40px 20px;
+                max-width: 1000px;
+                margin: 0 auto; 
+                line-height: 1.6;
+            }
+
+            .about-container h1 {
+                text-align: center;
+                margin-bottom: 30px;
+                color: #008714;
+            }
+
+            .about-content {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .mission-vision, .team-section {
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                background-color: #f9f9f9;
+            }
+
+            .mission-vision h2, .team-section h2 {
+                color: #333;
+                margin-bottom: 15px;
+                border-bottom: 2px solid #008714;
+                padding-bottom: 5px;
+            }
+
+            @media (max-width: 600px) {
+				.navbar ul {
+					flex-direction: column;
+				}
+			}
+    </style>
+</head>
+<body>
+    <!-- 1-nav bar -->
+		<nav class="navbar">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about.html">About us</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+				<li><a href="server.html">Our Service</a></li>
+			</ul>
+		</nav>
+        <section class="about-container">
+            <h1>About Our Company</h1>
+            
+            <div class="about-content">
+                <p>
+                    We are a dedicated team committed to **innovation and excellence** in all our endeavors. Founded with the vision of bridging the gap between cutting-edge technology and practical applications, we strive to deliver solutions that are not only effective but also sustainable and scalable. Our core expertise lies in leveraging **Artificial Intelligence and Drone technology** to revolutionize industries like agriculture, infrastructure inspection, and logistics.
+                </p>
+
+                <div class="mission-vision">
+                    <h2>Our Mission & Vision</h2>
+                    <p>
+                        **Mission:** To empower businesses and communities through superior technological solutions, maintaining the highest standards of quality and service.
+                    </p>
+                    <p>
+                        **Vision:** To be the global leader in AI and Drone services, recognized for our innovative spirit and commitment to a smarter, more connected future.
+                    </p>
+                </div>
+                
+                <div class="team-section">
+                    <h2>Our Values</h2>
+                    <ul>
+                        <li>**Integrity:** We operate with transparency and honesty in all our dealings.</li>
+                        <li>**Innovation:** We continuously pursue new ideas and technologies.</li>
+                        <li>**Customer Focus:** We are dedicated to understanding and meeting our clients' needs.</li>
+                        <li>**Excellence:** We strive for the highest quality in every project.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+</body>
+</html>
